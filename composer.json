@@ -1,5 +1,5 @@
 {
-    "name": "alver/composer-package",
+    "name": "alver/parentheses-string-validator",
     "type": "library",
     "require": {
         "php": ">=8.0"

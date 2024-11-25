@@ -17,4 +17,4 @@ A PHP library for validating the correctness of parentheses in a given string. D
 Install the library using Composer:
 
 ```bash
-composer require alver/composer-package
+composer require alver/parentheses-string-validator
