@@ -1,0 +1,35 @@
+<?php
+
+namespace Alver\ComposerPackage;
+
+class ParenthesesStringValidator
+{
+    /**
+     * Validate if the string has balanced parentheses.
+     *
+     * @param string $string The input string to validate.
+     * @return bool Returns true if the parentheses are balanced, false otherwise.
+     */
+    public static function validate(string $string): bool
+    {
+        $balance = 0;
+
+        for ($i = 0; $i < strlen($string); $i++) {
+            $char = $string[$i];
+            
+            if ($char === '(') {
+                $balance++;
+            } elseif ($char === ')') {
+                $balance--;
+            }
+
+            // If balance is negative, we have a closing bracket without an opening one
+            if ($balance < 0) {
+                return false;
+            }
+        }
+
+        // Return true if all open brackets are closed
+        return $balance === 0;
+    }
+}
