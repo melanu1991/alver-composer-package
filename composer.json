@@ -1,0 +1,7 @@
+{
+    "name": "alver/composer",
+    "type": "library",
+    "require": {
+        "php": ">=8.0"
+    }
+}
