@@ -1,5 +1,5 @@
 {
-    "name": "alver/composer",
+    "name": "alver/composer-package",
     "type": "library",
     "require": {
         "php": ">=8.0"
